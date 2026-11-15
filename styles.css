@@ -532,3 +532,66 @@ section.steps { position: relative; }
 @media (max-width: 560px) {
   .life-strip, .town-strip { grid-template-columns: 1fr 1fr; }
 }
+
+.sale-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+.sale-town {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 0 1.4rem;
+  align-items: stretch;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
+}
+.sale-town figure { margin: 0; }
+.sale-town img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+}
+.sale-town figcaption {
+  font-weight: 650;
+  font-size: 0.92rem;
+  padding: 0.65rem 0.85rem 0.8rem;
+  color: var(--sea-deep);
+}
+.sale-body {
+  padding: 1.15rem 1.3rem 1.3rem 0;
+}
+.sale-body h3 {
+  font-family: var(--serif);
+  font-size: 1.45rem;
+  font-weight: 600;
+  margin: 0 0 0.45rem;
+  color: var(--sea-deep);
+}
+.sale-count { margin: 0 0 0.35rem; font-weight: 650; }
+.sale-range { margin: 0 0 0.8rem; color: var(--muted); }
+.sale-examples {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+.sale-examples li {
+  padding: 0.4rem 0;
+  border-top: 1px solid var(--line);
+  font-size: 0.98rem;
+}
+.sale-cta { margin: 0; }
+.sale-note {
+  margin: 1.3rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+@media (max-width: 900px) {
+  .sale-town { grid-template-columns: 1fr; }
+  .sale-body { padding: 0 1.2rem 1.3rem; }
+}
