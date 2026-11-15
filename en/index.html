@@ -109,6 +109,36 @@
             <p>First a NIE and a lawyer who works for you, not for the seller. Then a reservation, the arras contract, due diligence and the escritura at the notary. A purchase often takes months. That is why we ask about your timing: within twelve months, or later.</p>
           </article>
         </div>
+        <div class="town-strip" aria-label="Towns between San Pedro de Alcántara and Sotogrande">
+          <figure class="town-card">
+            <img src="../img/towns/san-pedro.webp" width="1200" height="800" alt="The beach promenade and palm trees in San Pedro de Alcántara" loading="lazy">
+            <figcaption>San Pedro de Alcántara</figcaption>
+          </figure>
+          <figure class="town-card">
+            <img src="../img/towns/estepona.webp" width="1200" height="800" alt="The marina in Estepona" loading="lazy">
+            <figcaption>Estepona</figcaption>
+          </figure>
+          <figure class="town-card">
+            <img src="../img/towns/casares.webp" width="1200" height="800" alt="The white village of Casares on the hill" loading="lazy">
+            <figcaption>Casares</figcaption>
+          </figure>
+          <figure class="town-card">
+            <img src="../img/towns/manilva.webp" width="1200" height="800" alt="Residential hills in Manilva in morning light" loading="lazy">
+            <figcaption>Manilva</figcaption>
+          </figure>
+          <figure class="town-card">
+            <img src="../img/towns/sabinillas.webp" width="1200" height="800" alt="A fishing boat on the beach at San Luis de Sabinillas, with the mountains beyond" loading="lazy">
+            <figcaption>Sabinillas</figcaption>
+          </figure>
+          <figure class="town-card">
+            <img src="../img/towns/la-duquesa.webp" width="1200" height="800" alt="The marina at La Duquesa" loading="lazy">
+            <figcaption>La Duquesa</figcaption>
+          </figure>
+          <figure class="town-card">
+            <img src="../img/towns/sotogrande.webp" width="1200" height="800" alt="The marina at Sotogrande" loading="lazy">
+            <figcaption>Sotogrande</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -306,6 +336,80 @@
                 <option value="unsure">Not sure yet</option>
               </select>
             </div>
+            <details class="pref-block field full">
+              <summary>Optional — skip anything you like</summary>
+              <div class="pref-inner">
+                <div class="field full">
+                  <span class="pref-label" id="pref-priorities-en">What matters most to you?</span>
+                  <div class="checks" role="group" aria-labelledby="pref-priorities-en">
+                    <label><input type="checkbox" name="pref_priorities" value="sea-view"> Sea view</label>
+                    <label><input type="checkbox" name="pref_priorities" value="quiet"> Quiet</label>
+                    <label><input type="checkbox" name="pref_priorities" value="walk-to-beach-town"> Walk to beach or town</label>
+                    <label><input type="checkbox" name="pref_priorities" value="golf"> Golf</label>
+                    <label><input type="checkbox" name="pref_priorities" value="schools"> Schools</label>
+                    <label><input type="checkbox" name="pref_priorities" value="rental-income"> Rental income</label>
+                    <label><input type="checkbox" name="pref_priorities" value="new-build"> New build</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="pref-viewing-en">Would you like to view properties in person?</label>
+                  <select id="pref-viewing-en" name="pref_viewing">
+                    <option value="">Choose if you like</option>
+                    <option value="yes-trip">Yes, on a trip</option>
+                    <option value="video-first">Video viewings first</option>
+                    <option value="not-sure">Not sure yet</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="pref-pool-en">Swimming pool?</label>
+                  <select id="pref-pool-en" name="pref_pool">
+                    <option value="">Choose if you like</option>
+                    <option value="must-have">Must have</option>
+                    <option value="nice-to-have">Nice to have</option>
+                    <option value="not-needed">Not needed</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="pref-outdoor-en">Outdoor space</label>
+                  <select id="pref-outdoor-en" name="pref_outdoor">
+                    <option value="">Choose if you like</option>
+                    <option value="terrace">Terrace</option>
+                    <option value="garden">Garden</option>
+                    <option value="either">Either</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="pref-bedrooms-en">Bedrooms (minimum)</label>
+                  <input id="pref-bedrooms-en" name="pref_bedrooms" type="number" min="1" max="10" inputmode="numeric" placeholder="e.g. 2">
+                </div>
+                <div class="field">
+                  <label for="pref-parking-en">Parking or garage</label>
+                  <select id="pref-parking-en" name="pref_parking">
+                    <option value="">Choose if you like</option>
+                    <option value="must-have">Must have</option>
+                    <option value="nice-to-have">Nice to have</option>
+                    <option value="not-needed">Not needed</option>
+                  </select>
+                </div>
+                <div class="field full">
+                  <span class="pref-heading">Getting around</span>
+                  <span class="pref-label" id="pref-walking-en">What would you like within walking distance?</span>
+                  <div class="checks" role="group" aria-labelledby="pref-walking-en">
+                    <label><input type="checkbox" name="pref_walking" value="beach"> Beach</label>
+                    <label><input type="checkbox" name="pref_walking" value="shops-cafes"> Shops &amp; cafés</label>
+                    <label><input type="checkbox" name="pref_walking" value="restaurants"> Restaurants</label>
+                    <label><input type="checkbox" name="pref_walking" value="golf"> Golf</label>
+                    <label><input type="checkbox" name="pref_walking" value="town-centre"> Town centre</label>
+                    <label><input type="checkbox" name="pref_walking" value="public-transport"> Public transport</label>
+                    <label><input type="checkbox" name="pref_walking" value="not-important"> Not important</label>
+                  </div>
+                </div>
+                <div class="field full">
+                  <label for="pref-notes-en">Anything else</label>
+                  <textarea id="pref-notes-en" name="pref_notes" rows="3" maxlength="2000" placeholder="Anything we should know"></textarea>
+                </div>
+              </div>
+            </details>
             <div class="field full">
               <label class="consent" for="consent-en">
                 <input id="consent-en" name="consent" type="checkbox" value="yes" required>
@@ -339,6 +443,18 @@
           <p><a href="privacy.html">Privacy</a></p>
           <p><a href="mailto:contact@westersol.com">contact@westersol.com</a></p>
         </div>
+      </div>
+      <div class="photo-credits">
+        <p>Photo credits</p>
+        <ul>
+          <li>San Pedro de Alcántara: <a href="https://commons.wikimedia.org/wiki/File:Paseo_mar%C3%ADtimo_Playa_San_Pedro.jpg">Paseo marítimo Playa San Pedro</a> by Dcarolina.2000, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via Wikimedia Commons.</li>
+          <li>Estepona: <a href="https://commons.wikimedia.org/wiki/File:Puerto_deportivo_Estepona_november.jpg">Puerto deportivo Estepona november</a> by Turista Inglesa, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via Wikimedia Commons.</li>
+          <li>Casares: <a href="https://commons.wikimedia.org/wiki/File:Casares_spain.jpg">Casares spain</a> by NashvilleScholar, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via Wikimedia Commons.</li>
+          <li>Manilva: <a href="https://commons.wikimedia.org/wiki/File:Morning_light_Manilva.jpg">Morning light Manilva</a> by Andy R, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>, via Wikimedia Commons.</li>
+          <li>Sabinillas: <a href="https://commons.wikimedia.org/wiki/File:San_Luis_de_Sabinillas._Mayo_2025.jpg">San Luis de Sabinillas. Mayo 2025</a> by Plazadelcamino, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via Wikimedia Commons.</li>
+          <li>La Duquesa: <a href="https://commons.wikimedia.org/wiki/File:Puerto-de-la-duquesa.jpg">Puerto-de-la-duquesa</a> by Andalusien Aktuell, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, via Wikimedia Commons.</li>
+          <li>Sotogrande: <a href="https://commons.wikimedia.org/wiki/File:Sotogrande.jpg">Sotogrande</a> by Dgd education, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via Wikimedia Commons.</li>
+        </ul>
       </div>
       <p class="legal">No photographs of people. Westersol is a brand name, not a person's name. © 2026 Westersol.</p>
     </div>

@@ -109,6 +109,36 @@
             <p>Eerst NIE en een advocaat die voor u werkt, niet voor de verkoper. Daarna reservering, arras-contract, due diligence en de escritura bij de notaris. Een aankoop duurt vaak maanden. Daarom vragen wij naar uw planning: binnen twaalf maanden, of later.</p>
           </article>
         </div>
+        <div class="town-strip" aria-label="Plaatsen tussen San Pedro de Alcántara en Sotogrande">
+          <figure class="town-card">
+            <img src="../img/towns/san-pedro.webp" width="1200" height="800" alt="De zeedijk en palmbomen in San Pedro de Alcántara" loading="lazy">
+            <figcaption>San Pedro de Alcántara</figcaption>
+          </figure>
+          <figure class="town-card">
+            <img src="../img/towns/estepona.webp" width="1200" height="800" alt="De jachthaven van Estepona" loading="lazy">
+            <figcaption>Estepona</figcaption>
+          </figure>
+          <figure class="town-card">
+            <img src="../img/towns/casares.webp" width="1200" height="800" alt="Het witte dorp Casares op de heuvel" loading="lazy">
+            <figcaption>Casares</figcaption>
+          </figure>
+          <figure class="town-card">
+            <img src="../img/towns/manilva.webp" width="1200" height="800" alt="Woonwijken in de heuvels van Manilva in het ochtendlicht" loading="lazy">
+            <figcaption>Manilva</figcaption>
+          </figure>
+          <figure class="town-card">
+            <img src="../img/towns/sabinillas.webp" width="1200" height="800" alt="Een vissersboot op het strand van San Luis de Sabinillas, met de bergen op de achtergrond" loading="lazy">
+            <figcaption>Sabinillas</figcaption>
+          </figure>
+          <figure class="town-card">
+            <img src="../img/towns/la-duquesa.webp" width="1200" height="800" alt="De jachthaven van La Duquesa" loading="lazy">
+            <figcaption>La Duquesa</figcaption>
+          </figure>
+          <figure class="town-card">
+            <img src="../img/towns/sotogrande.webp" width="1200" height="800" alt="De jachthaven van Sotogrande" loading="lazy">
+            <figcaption>Sotogrande</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -306,6 +336,80 @@
                 <option value="unsure">Nog niet zeker</option>
               </select>
             </div>
+            <details class="pref-block field full">
+              <summary>Optioneel — sla gerust over</summary>
+              <div class="pref-inner">
+                <div class="field full">
+                  <span class="pref-label" id="pref-priorities-nl">Wat is voor u het belangrijkst?</span>
+                  <div class="checks" role="group" aria-labelledby="pref-priorities-nl">
+                    <label><input type="checkbox" name="pref_priorities" value="sea-view"> Zeezicht</label>
+                    <label><input type="checkbox" name="pref_priorities" value="quiet"> Rust</label>
+                    <label><input type="checkbox" name="pref_priorities" value="walk-to-beach-town"> Te voet naar strand of centrum</label>
+                    <label><input type="checkbox" name="pref_priorities" value="golf"> Golf</label>
+                    <label><input type="checkbox" name="pref_priorities" value="schools"> Scholen</label>
+                    <label><input type="checkbox" name="pref_priorities" value="rental-income"> Verhuurinkomsten</label>
+                    <label><input type="checkbox" name="pref_priorities" value="new-build"> Nieuwbouw</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="pref-viewing-nl">Wilt u woningen ter plaatse bezichtigen?</label>
+                  <select id="pref-viewing-nl" name="pref_viewing">
+                    <option value="">Kies desgewenst</option>
+                    <option value="yes-trip">Ja, tijdens een reis</option>
+                    <option value="video-first">Eerst via video</option>
+                    <option value="not-sure">Nog niet zeker</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="pref-pool-nl">Zwembad?</label>
+                  <select id="pref-pool-nl" name="pref_pool">
+                    <option value="">Kies desgewenst</option>
+                    <option value="must-have">Moet er zijn</option>
+                    <option value="nice-to-have">Graag, maar geen must</option>
+                    <option value="not-needed">Niet nodig</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="pref-outdoor-nl">Buitenruimte</label>
+                  <select id="pref-outdoor-nl" name="pref_outdoor">
+                    <option value="">Kies desgewenst</option>
+                    <option value="terrace">Terras</option>
+                    <option value="garden">Tuin</option>
+                    <option value="either">Terras of tuin</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="pref-bedrooms-nl">Slaapkamers (minimaal)</label>
+                  <input id="pref-bedrooms-nl" name="pref_bedrooms" type="number" min="1" max="10" inputmode="numeric" placeholder="bijv. 2">
+                </div>
+                <div class="field">
+                  <label for="pref-parking-nl">Parkeerplaats of garage</label>
+                  <select id="pref-parking-nl" name="pref_parking">
+                    <option value="">Kies desgewenst</option>
+                    <option value="must-have">Moet er zijn</option>
+                    <option value="nice-to-have">Graag, maar geen must</option>
+                    <option value="not-needed">Niet nodig</option>
+                  </select>
+                </div>
+                <div class="field full">
+                  <span class="pref-heading">Afstanden</span>
+                  <span class="pref-label" id="pref-walking-nl">Wat wil je op loopafstand hebben?</span>
+                  <div class="checks" role="group" aria-labelledby="pref-walking-nl">
+                    <label><input type="checkbox" name="pref_walking" value="beach"> Het strand</label>
+                    <label><input type="checkbox" name="pref_walking" value="shops-cafes"> Winkels en cafés</label>
+                    <label><input type="checkbox" name="pref_walking" value="restaurants"> Restaurants</label>
+                    <label><input type="checkbox" name="pref_walking" value="golf"> Golf</label>
+                    <label><input type="checkbox" name="pref_walking" value="town-centre"> Het centrum</label>
+                    <label><input type="checkbox" name="pref_walking" value="public-transport"> Openbaar vervoer</label>
+                    <label><input type="checkbox" name="pref_walking" value="not-important"> Niet belangrijk</label>
+                  </div>
+                </div>
+                <div class="field full">
+                  <label for="pref-notes-nl">Nog iets anders</label>
+                  <textarea id="pref-notes-nl" name="pref_notes" rows="3" maxlength="2000" placeholder="Iets dat wij moeten weten"></textarea>
+                </div>
+              </div>
+            </details>
             <div class="field full">
               <label class="consent" for="consent-nl">
                 <input id="consent-nl" name="consent" type="checkbox" value="yes" required>
@@ -339,6 +443,18 @@
           <p><a href="privacy.html">Privacy</a></p>
           <p><a href="mailto:contact@westersol.com">contact@westersol.com</a></p>
         </div>
+      </div>
+      <div class="photo-credits">
+        <p>Fotoverantwoording</p>
+        <ul>
+          <li>San Pedro de Alcántara: <a href="https://commons.wikimedia.org/wiki/File:Paseo_mar%C3%ADtimo_Playa_San_Pedro.jpg">Paseo marítimo Playa San Pedro</a> van Dcarolina.2000, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via Wikimedia Commons.</li>
+          <li>Estepona: <a href="https://commons.wikimedia.org/wiki/File:Puerto_deportivo_Estepona_november.jpg">Puerto deportivo Estepona november</a> van Turista Inglesa, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via Wikimedia Commons.</li>
+          <li>Casares: <a href="https://commons.wikimedia.org/wiki/File:Casares_spain.jpg">Casares spain</a> van NashvilleScholar, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via Wikimedia Commons.</li>
+          <li>Manilva: <a href="https://commons.wikimedia.org/wiki/File:Morning_light_Manilva.jpg">Morning light Manilva</a> van Andy R, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>, via Wikimedia Commons.</li>
+          <li>Sabinillas: <a href="https://commons.wikimedia.org/wiki/File:San_Luis_de_Sabinillas._Mayo_2025.jpg">San Luis de Sabinillas. Mayo 2025</a> van Plazadelcamino, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via Wikimedia Commons.</li>
+          <li>La Duquesa: <a href="https://commons.wikimedia.org/wiki/File:Puerto-de-la-duquesa.jpg">Puerto-de-la-duquesa</a> van Andalusien Aktuell, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, via Wikimedia Commons.</li>
+          <li>Sotogrande: <a href="https://commons.wikimedia.org/wiki/File:Sotogrande.jpg">Sotogrande</a> van Dgd education, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via Wikimedia Commons.</li>
+        </ul>
       </div>
       <p class="legal">Geen foto’s van personen. Westersol is een merkennaam, geen persoonsnaam. © 2026 Westersol.</p>
     </div>
