@@ -1,0 +1,35 @@
+name: Decode lifestyle photos
+
+on:
+  push:
+    paths:
+      - "img/_src/**"
+      - ".github/workflows/decode-images.yml"
+  workflow_dispatch:
+
+jobs:
+  decode:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode and commit WebP photos
+        run: |
+          set -e
+          mkdir -p img/life
+          shopt -s nullglob
+          for f in img/_src/life-*.tar.b64; do
+            echo "Decoding $f"
+            base64 -d "$f" | tar -C img/life -xf -
+          done
+          ls -la img/life
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add img/life/*.webp
+          if git diff --cached --quiet; then
+            echo "No image changes"
+            exit 0
+          fi
+          git commit -m "Add decoded lifestyle WebP photos from Wikimedia Commons"
+          git push
