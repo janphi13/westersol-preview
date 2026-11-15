@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Westersol">
+  <title>Westersol</title>
+  <rect width="64" height="64" rx="14" fill="#0f3d3a"/>
+  <path fill="#c4a574" d="M33.70,18.80 L32.35,10.20 L31.65,10.20 L30.30,18.80 Z"/>
+  <path fill="#c4a574" d="M42.54,23.87 L47.66,16.83 L47.17,16.34 L40.13,21.46 Z"/>
+  <path fill="#c4a574" d="M45.20,33.70 L53.80,32.35 L53.80,31.65 L45.20,30.30 Z"/>
+  <path fill="#c4a574" d="M40.13,42.54 L47.17,47.66 L47.66,47.17 L42.54,40.13 Z"/>
+  <path fill="#c4a574" d="M30.30,45.20 L31.65,53.80 L32.35,53.80 L33.70,45.20 Z"/>
+  <path fill="#c4a574" d="M21.46,40.13 L16.34,47.17 L16.83,47.66 L23.87,42.54 Z"/>
+  <path fill="#c4a574" d="M18.80,30.30 L10.20,31.65 L10.20,32.35 L18.80,33.70 Z"/>
+  <path fill="#c4a574" d="M23.87,21.46 L16.83,16.34 L16.34,16.83 L21.46,23.87 Z"/>
+  <circle cx="32" cy="32" r="11.2" fill="#b4532a"/>
+  <circle cx="32" cy="32" r="9.6" fill="none" stroke="#c4a574" stroke-width="1.3"/>
+  <circle cx="28.864" cy="28.64" r="2.464" fill="#e0c9a0" opacity="0.6"/>
+</svg>
