@@ -1,0 +1,30 @@
+name: Decode logo PNGs
+on:
+  push:
+    paths:
+      - "img/_src/logo.tar.b64"
+      - ".github/workflows/decode-logo.yml"
+  workflow_dispatch:
+jobs:
+  decode:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode logo PNGs
+        run: |
+          mkdir -p img/logo
+          base64 -d img/_src/logo.tar.b64 | tar -x -C img/logo
+          ls -la img/logo
+      - name: Commit decoded PNGs
+        run: |
+          git config user.name "westersol-preview"
+          git config user.email "contact@westersol.com"
+          git add img/logo/icon-192.png img/logo/icon-512.png
+          if git diff --cached --quiet; then
+            echo "No logo PNG changes"
+            exit 0
+          fi
+          git commit -m "Decode logo PNGs into img/logo/"
+          git push
